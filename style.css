@@ -96,6 +96,9 @@ header img {
     border-radius: 120px;
  }
 
+ .line-spacer {
+   line-height: 10mm;
+ }
  .pages {
     text-align: justify;
     line-height: 8mm;
@@ -126,10 +129,20 @@ header img {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
     flex-direction: column;
     margin: 0 auto;
     
+ }
+
+ .visuals figure {
+   margin: 0 auto;
+   display: block;
+   text-align: center;
+ }
+
+ .visuals figcaption {
+   margin-top: -10px;
  }
 
  .visuals img {
