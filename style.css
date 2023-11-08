@@ -59,6 +59,23 @@ header img {
     gap: 20px;
 }
 
+.case-studies {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   max-width: 1300px;
+}
+
+.case-studies > div {
+   width: 20%;
+   max-width: 1000px;
+}
+
+.case-studies img {
+   width: 100%;
+}
+
 .main-footer{
     display: flex;
     align-items: center;
@@ -68,10 +85,10 @@ header img {
     margin: 0 auto;
 }
 .main-footer div {
-    max-width: 190px;
+    max-width: 165px;
     min-width: 75px;
     min-height: 75px;
-    max-height: 190px;
+    max-height: 165px;
     margin: 10px;
 
 }
@@ -117,10 +134,14 @@ header img {
     width: 70%;
  }
 
- .case-img {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+.case-image {
+   width: 100%;
+   max-width: 1000px;
+}
+ .center-el {
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 auto;
  }
 
  .image-limiter {
@@ -206,4 +227,34 @@ header img {
 
 @media only screen and (max-width: 600px) {
    .main-footer h4 {font-size: 3mm;}
+
+   .case-studies {
+      flex-direction: column; 
+      align-items: center;
+      gap: 20px; 
+  }
+
+  .case-studies > div {
+      width: 100%; 
+  }
+
+  header img {
+   width: 50px;
+   height: 50px;
+   margin-top: 25px;;
+  }
  }
+
+ @media only screen and (min-width: 601px) and (max-width: 1368px) {
+   .case-studies {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      max-width: 1300px;
+   }
+   
+   .case-studies > div {
+      width: 250px;
+   }
+}
